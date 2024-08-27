@@ -1,0 +1,102 @@
+:root {
+  --background-color: hsl(0, 0%, 8%);
+  --card-color: hsl(0, 0%, 12%);
+  --button-color: hsl(0, 0%, 20%);
+  --font-color: hsl(0, 0%, 100%);
+  --unique-color: hsl(75, 94%, 57%);
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-container {
+  background-color: var(--card-color);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  width: 300px;
+}
+
+.card-container .card-header img {
+  border-radius: 50%;
+  width: 6rem;
+  margin-bottom: 1rem;
+}
+
+.card-container .card-header #user-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-container .card-header #user-location {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--unique-color);
+  margin-bottom: 1.5rem;
+}
+
+.card-container .card-header #user-description {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-container .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-container .card-body .media-buttons {
+  background-color: var(--button-color);
+  color: var(--font-color);
+  border: none;
+  font-weight: 600;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.card-container .card-body .media-buttons:hover {
+  background-color: var(--unique-color);
+  cursor: pointer;
+  color: var(--card-color);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--card-color);
+}
+
+.attribution a {
+  color: var(--unique-color);
+  text-decoration: none;
+}
