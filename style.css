@@ -79,7 +79,8 @@ body {
   border-radius: 0.5rem;
 }
 
-.card-container .card-body .media-buttons:hover {
+.card-container .card-body .media-buttons:hover,
+.card-container .card-body .media-buttons:focus {
   background-color: var(--unique-color);
   cursor: pointer;
   color: var(--card-color);
@@ -99,4 +100,37 @@ body {
 .attribution a {
   color: var(--unique-color);
   text-decoration: none;
+}
+
+.attribution a:focus {
+  background-color: var(--unique-color);
+  color: var(--background-color);
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    padding: 2.5rem;
+    max-width: 400px;
+  }
+
+  .card-header img {
+    width: 7rem;
+  }
+
+  .card-header #user-name {
+    font-size: 1.8rem;
+  }
+
+  .card-header #user-location {
+    font-size: 1rem;
+  }
+
+  .card-header #user-description {
+    font-size: 1rem;
+  }
+
+  .media-button {
+    font-size: 1rem;
+  }
 }
