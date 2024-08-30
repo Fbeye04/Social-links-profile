@@ -98,8 +98,7 @@ body {
 }
 
 .attribution a {
-  color: var(--unique-color);
-  text-decoration: none;
+  color: hsl(228, 45%, 44%);
 }
 
 .attribution a:focus {
