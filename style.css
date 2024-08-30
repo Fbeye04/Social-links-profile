@@ -65,6 +65,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.card-container .card-body ul li {
+  list-style: none;
+}
+
 .card-container .card-body .media-buttons {
   display: flex;
   flex-direction: column;
